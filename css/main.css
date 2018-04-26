@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display:400,900");
 html {
   line-height: 1.15;
   /* 1 */
@@ -527,6 +528,7 @@ h1, h2 {
   text-align: center;
   color: #37443d;
   margin: 0;
+  text-shadow: 0 0 3px #fff;
 }
 
 h1 {
@@ -535,18 +537,50 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto';
+  font-family: 'Lato';
   font-weight: 300;
   font-size: 2.5em;
 }
 
+a {
+  font-family: 'Lato';
+  text-decoration: none;
+  color: #37443d;
+  font-size: 1em;
+}
+
 .bg {
-  background-image: url("../img/room.png");
+  background: url("../img/room.png") center center no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.headercont {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 90%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #fff;
+}
+nav a {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+nav .first {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.navigation {
+  width: 80%;
+  text-align: right;
+  margin: auto 0;
 }
 
 /* ==========================================================================

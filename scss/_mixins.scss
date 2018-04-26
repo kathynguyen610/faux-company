@@ -1,6 +1,19 @@
 @mixin text {
 	font-family:'Playfair Display';
 	text-align:center;
-	color:#37443d;
+	color: $primary-color;
 	margin:0;
+	text-shadow:0 0 3px #fff;
+}
+
+@mixin links {
+	font-family:'Lato';
+	text-decoration:none;
+	color: $primary-color;
+}
+
+@mixin vertical {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
 }

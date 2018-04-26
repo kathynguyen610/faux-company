@@ -11,16 +11,46 @@ h1 {
 	font-size: 4em;
 }
 h2 {
-	font-family: 'Roboto';
+	font-family: 'Lato';
 	font-weight:300;
 	font-size:2.5em;
 }
-
+a {
+	@include links;
+	font-size:1em;
+ }
 .bg {
-	background-image:url('../img/room.png');
+	background:url('../img/room.png') center center no-repeat;
 	background-size:cover;
 	height:100vh;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
+}
+
+.headercont {
+	@include vertical;
+	height:90%;
+}
+
+nav {
+	display: flex;
+	justify-content:space-between;
+	padding:15px;
+	background:#fff;
+
+	a {
+		margin-right:15px;
+		font-size:1.2em;
+	}
+
+	.first {
+		font-weight: 700;
+		font-size:2em;
+	}
+
+}
+
+.navigation {
+	width:80%;
+	text-align:right;
+	margin:auto 0;
+
 }
