@@ -1,8 +1,13 @@
 header {
 	grid-area:header;
+	h2 {
+	font-family: 'Lato';
+	font-weight:300;
+	font-size:2.5em;
+}
 }
 
-h1, h2 {
+h1, h2, h3 {
 	@include text;
 }
 
@@ -11,9 +16,14 @@ h1 {
 	font-size: 4em;
 }
 h2 {
-	font-family: 'Lato';
-	font-weight:300;
-	font-size:2.5em;
+	font-weight: 900;
+	font-size: 4em;
+}
+
+h3 {
+	font-size:2em;
+	letter-spacing:1px;
+	padding:5px;
 }
 a {
 	@include links;
@@ -44,13 +54,45 @@ nav {
 	.first {
 		font-weight: 700;
 		font-size:2em;
+		color: $secondary-color;
 	}
 
 }
-
 .navigation {
 	width:80%;
 	text-align:right;
 	margin:auto 0;
 
+}
+
+section {
+	padding:20px;
+}
+
+.featurecont {
+	display:flex;
+	justify-content:space-around;
+	padding:20px;
+	max-width:1000px;
+	margin:0 auto;
+
+	.feature {
+		padding:20px;
+		text-align:center;
+		p {
+			text-align:left;
+			font-family: 'Lato';
+			font-size:16px;
+			line-height:1.6em;
+			margin:0;
+		}
+	}
+
+	.material-icons {
+		padding:30px;
+		font-size:36px;
+		background: $secondary-color;
+		border-radius:100%;
+		color:#fff
+	}
 }

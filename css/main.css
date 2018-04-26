@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display:400,900");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Lato:300,700|Playfair+Display:400,900");
 html {
   line-height: 1.15;
   /* 1 */
@@ -522,13 +522,19 @@ textarea {
 header {
   grid-area: header;
 }
+header h2 {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 2.5em;
+}
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Playfair Display';
   text-align: center;
-  color: #37443d;
+  color: #333;
   margin: 0;
   text-shadow: 0 0 3px #fff;
+  letter-spacing: 2px;
 }
 
 h1 {
@@ -537,15 +543,20 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lato';
-  font-weight: 300;
-  font-size: 2.5em;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  padding: 5px;
 }
 
 a {
   font-family: 'Lato';
   text-decoration: none;
-  color: #37443d;
+  color: #333;
   font-size: 1em;
 }
 
@@ -575,12 +586,43 @@ nav a {
 nav .first {
   font-weight: 700;
   font-size: 2em;
+  color: #629890;
 }
 
 .navigation {
   width: 80%;
   text-align: right;
   margin: auto 0;
+}
+
+section {
+  padding: 20px;
+}
+
+.featurecont {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.featurecont .feature {
+  padding: 20px;
+  text-align: center;
+}
+.featurecont .feature p {
+  text-align: left;
+  font-family: 'Lato';
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+.featurecont .material-icons {
+  padding: 30px;
+  font-size: 36px;
+  background: #629890;
+  border-radius: 100%;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -751,5 +793,5 @@ nav .first {
 }
 .wrapper {
   display: grid;
-  grid-template-areas: "header header header header";
+  grid-template-areas: "header" "section";
 }
