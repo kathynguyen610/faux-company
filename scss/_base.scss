@@ -75,6 +75,7 @@ nav {
 
 section {
 	padding:20px;
+	text-align:center;
 }
 
 .featurecont {
@@ -124,3 +125,78 @@ section {
 .text-cont {
 	display:flex;
 }
+
+button {
+	padding:20px;
+	font-family: 'Lato';
+	background:$secondary-color;
+	margin:20px;
+	color:#fff;
+	border:0;
+	font-size:1.2em;
+	transition:ease .3s;
+}
+
+button:hover {
+	background:#fff;
+	border: 1px solid $secondary-color;
+	color:$secondary-color;
+	transition: ease .3s;
+}
+
+@media only screen 
+  and (max-width: 520px) {
+  	h1 {
+  		font-size:3em;
+  	}
+
+  	header h2 {
+  		font-size:2em;
+  		width:80%;
+  		margin:0 auto;
+  	}
+
+  	h2 {
+  		font-size: 3em;
+  	}
+
+  	nav {
+  		padding:10px;
+  	}
+
+  	nav a {
+  		font-size:1em;
+  		padding: 5px;
+  		margin:5px;
+  	}
+  	.featurecont, .test-cont {
+  		display:flex;
+  		flex-direction:column;
+  	}
+
+  	.test-cont img {
+  		margin:0 auto;
+  	}
+
+  	.testimony p {
+  		font-size:1em;
+  	}
+
+  }
+
+
+@media only screen 
+  and (max-width: 320px) { 
+		.first {
+			display: none;
+		}
+
+		.navigation {
+			display:Flex;
+			justify-content:space-around;
+		}
+
+		nav {
+			width:100%;
+		}
+  }
