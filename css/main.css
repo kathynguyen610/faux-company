@@ -519,6 +519,46 @@ textarea {
   padding: 0.2em 0;
 }
 
+.icon-sprite, .icon-home, .icon-money, .icon-spa {
+  background-image: url('../img/icon-s0457b3a08c.png');
+  background-repeat: no-repeat;
+}
+
+.icon-home {
+  background-position: 0 0;
+}
+
+.icon-money {
+  background-position: 0 -36px;
+}
+
+.icon-spa {
+  background-position: 0 -72px;
+}
+
+ul {
+  padding: 0;
+  background: #629890;
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  padding: 25px;
+  border-radius: 100%;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  width: 36px;
+  height: 34px;
+  margin-left: -2px;
+}
+li span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
+
 header {
   grid-area: header;
 }
@@ -669,6 +709,13 @@ button:hover {
   border: 1px solid #629890;
   color: #629890;
   transition: ease .3s;
+}
+
+.feature i {
+  padding: 30px;
+  background: #629890;
+  border-radius: 100%;
+  color: #fff;
 }
 
 @media only screen and (max-width: 520px) {

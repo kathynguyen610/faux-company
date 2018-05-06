@@ -1,3 +1,30 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+
+ul {
+	padding: 0;
+	background:$secondary-color;
+	margin:0 auto;
+	width:32px;
+	height:32px;
+	padding:25px;
+	border-radius:100%;
+}
+li {
+	list-style:none;
+	display: inline-block;
+	width: 36px;
+	height: 34px;
+	margin-left:-2px;
+
+		  span {
+		  	position: absolute;
+		  	top: -9999em;
+		  	left: -9999em;		  	
+	}
+}
+
 header {
 	grid-area:header;
 	h2 {
@@ -28,7 +55,7 @@ h3 {
 a {
 	@include links;
 	font-size:1em;
- }
+}
 
 p {
 	text-align:left;
@@ -142,6 +169,13 @@ button:hover {
 	border: 1px solid $secondary-color;
 	color:$secondary-color;
 	transition: ease .3s;
+}
+
+.feature i {
+		padding:30px;
+		background: $secondary-color;
+		border-radius:100%;
+		color:#fff
 }
 
 @media only screen 
